@@ -15,8 +15,8 @@ public class PhysicRaycast : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    RaycastHit hit;
-	    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, float.MaxValue, LayerMask.GetMask("First", "Second")))
+        RaycastHit hit;
+	    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, float.MaxValue, ~LayerMask.GetMask("First", "Second")))
 	    {
 	        Debug.DrawRay(hit.point, hit.normal, Color.red);
         }

@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
